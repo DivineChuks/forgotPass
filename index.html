@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="icon" href="images/excel.png">
+        <!--font awesome-->
+    <link href="font/css/all.css" rel="stylesheet">
+    <!-- Boostrap csss-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/css/fontawesome.min.css">
+    <title>Excel Finance</title>
+</head>
+<body style="background-color: #f2f2f2;">
+
+<!--Navigation-->
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top p-2">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img class="logo" src="images/excel.png" width="150" height="25"  alt="">
+        </a>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item text-white register pr-3">
+              <a href="#" class="btn btn-primary btn-md">Register</a>
+          </li>
+           <li class="nav-item text-white register">
+              <a href="#" class="btn btn-primary btn-md">Login</a>
+          </li>
+        </ul> 
+    </div>
+  </nav>
+
+    <section class="form-section">
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-12 text-center mb-3 mt-3">
+                    <h2>Password Recovery</h2>
+                </div>
+                <div class="text-center col-md-4 mx-auto">
+                   <div class="mb-3"><i class="fas fa-lock"></i></div> 
+                     <p class="text-muted text-center">To begin changing your password, please enter your phone or email</p>      
+                </div>              
+            </div>
+
+              <div class="row mb-3"> 
+                <div class="col-md-4 mx-auto">
+                    <form class="form-container" id="form">
+                        <div class="form-group mt-3 mb-4">
+                            <input type="text" class="form-control shadow-none" id="email" placeholder="Phone number or Email">
+                        </div>
+                        <a href="#" class="btn btn-block btn-primary mb-3 btnReg">Login</a>
+                         <a href="" class="text-danger"><strong><p class="text-center">Back to Log in</p></strong></a>
+                        <p class="text-muted text-center">Don't have an account? <a href="" class="text-danger">Sign Up</a></p>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <div class="py-3">
+        
+    </div>
+
+<div class="navbar fixed-bottom navbar-dark copy p-1" style="background-color: #343a40;">
+    <div class="container">
+        <div class="pl-3">
+            <a href=""><small>Terms of Service</small></a>
+        </div>
+        <div class="pl-3">
+             <a href=""><small>Privacy Policy</small></a>
+        </div>
+         <ul class="navbar-nav ml-auto">
+          <li class="nav-item text-white register">
+              <small>Copyright 2021 &copy; Excel Finance Group | All Right Reserved</small>
+          </li>
+        </ul>           
+    </div>
+</div>
+
+
+  <script>
+          const togglePassword = document.querySelector('#togglePassword');
+    const password = document.querySelector('#password');
+
+    togglePassword.addEventListener('click', function (e) {
+        // toggle the type attribute
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        // toggle the eye / eye slash icon
+        this.classList.toggle('bi-eye');
+    });
+  </script> 
+
+
+
+    
+
+<script src="js/jquery.min.js"></script>
+   <!-- Popper JS -->
+<script src="js/popper.min.js"></script>
+   <!-- Latest compiled JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
