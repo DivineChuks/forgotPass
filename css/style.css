@@ -23,6 +23,11 @@ nav {
   margin-top: 40px;
 }
 
+#form{
+  background-color: #fff;
+  padding: 15px;
+}
+
 .reset{
   border-radius: 15px !important;
 }
@@ -47,26 +52,26 @@ input:focus {
 }
 
 @media (max-width: 768px) {
-  .logo {
+  /*.logo {
     margin-left: 26px;
   }
+*/
+  .login {
+    display: none;
+  }
 
-  .register {
-    display: none;
-  }
- .copy{
-    padding-top: 5px !important;
-  }
   .copy a {
-    display: none;
+   display: none;
   }
+
   .eye {
   position: absolute;
-  top: 38%;
-  right: 17%;
+  top: 52%;
+  right: 14%;
+  cursor: pointer;
 }
-
+/*
   .copy small {
-    font-size: 11.5px;
+    font-size: 12px;
   }
 }
