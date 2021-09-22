@@ -52,7 +52,7 @@ input:focus {
   }
 
   .register {
-    margin-right: 10px;
+    display: none;
   }
  .copy{
     padding-top: 5px !important;
