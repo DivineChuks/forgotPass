@@ -18,6 +18,10 @@ nav {
   color: #fff !important;
 }
 
+a{
+  text-decoration: none !important;
+}
+
 
 .form-section {
   margin-top: 40px;
@@ -70,8 +74,7 @@ input:focus {
   right: 14%;
   cursor: pointer;
 }
-/*
-  .copy small {
-    font-size: 12px;
+  .copyright{
+    margin: center;
   }
 }
